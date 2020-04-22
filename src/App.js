@@ -8,6 +8,7 @@ function App() {
 
   const [homeValue, setHome] = useState(0);
   const [awayValue, setAway] = useState(0);
+  const [lifeValue, setLife] = useState(0)
   
   return (
     <div className="container">
@@ -18,6 +19,9 @@ function App() {
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
             <div className="home__score">{homeValue}</div>
+
+            <h2 className="baby_born">Population Increase</h2>
+            <div className="baby_score">{lifeValue}</div>
           </div>
           <div className="timer">00:03</div>
           <div className="away">
@@ -38,8 +42,13 @@ function App() {
           </button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown"  onClick={()=>{setAway(awayValue + 7)}}>TURNED</button>
-          <button className="awayButtons__fieldGoal"  onClick={() => {setAway(awayValue + 3)}}>HUNGRY</button>
+          <button className="awayButtons__touchdown" onClick={() => { setAway(awayValue + 7);}}>TURNED</button>
+          <button className="awayButtons__fieldGoal" onClick={() => { setAway(awayValue + 3);}}>HUNGRY</button>
+        </div>
+        <div>
+          <div className="bornHumans">
+            <button className="humansBorn" onClick={() => { setLife(lifeValue + 1);}}>Baby Born</button>
+          </div>
         </div>
       </section>
     </div>

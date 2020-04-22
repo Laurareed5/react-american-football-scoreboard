@@ -45,14 +45,22 @@
 .down__title,
 .toGo__title,
 .ballOn__title,
-.quarter__title {
+.quarter__title
+ {
   text-transform: uppercase;
   font-size: 3rem;
   padding: 2rem;
 }
 
+.baby_born {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 .home__score,
-.away__score {
+.away__score,
+.baby_score {
   font-family: "Ozone";
   font-size: 7rem;
   width: 90%;
@@ -115,7 +123,8 @@
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.humansBorn {
   margin: 1rem;
   border-radius: 4px;
 }
