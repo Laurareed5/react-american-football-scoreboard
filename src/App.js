@@ -22,7 +22,7 @@ function App() {
           <div className="timer">00:03</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
-            <div className="away__score">{setValue}</div>
+            <div className="away__score">{awayValue}</div>
           </div>
         </div>
         <BottomRow />
