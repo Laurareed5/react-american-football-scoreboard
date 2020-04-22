@@ -39,7 +39,7 @@ function App() {
         </div>
         <div className="awayButtons">
           <button className="awayButtons__touchdown"  onClick={()=>{setAway(awayValue + 7)}}>TURNED</button>
-          <button className="awayButtons__fieldGoal"  onClick={() => {setAway(awayValue + 3)}}>SAFE</button>
+          <button className="awayButtons__fieldGoal"  onClick={() => {setAway(awayValue + 3)}}>HUNGRY</button>
         </div>
       </section>
     </div>
