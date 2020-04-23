@@ -23,7 +23,7 @@ const BottomRow = () => {
         <div className="quarter__value">{quarter}</div>
       </div>
       <div className="quarter_button">
-        <button className="quarterBtn" onClick={() => {setQuarter(quarter + 10)}}>HALF ZOMBIE</button>
+        <button className="quarterBtn" onClick={() => {setQuarter(quarter + .5)}}>HALF ZOMBIE</button>
       </div>
     </div>
   );
